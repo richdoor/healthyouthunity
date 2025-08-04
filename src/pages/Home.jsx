@@ -77,10 +77,10 @@ const Home = () => {
   ];
 
   const events = [
-    { date: "Aug 15", title: "CPR Training Workshop", type: "Educational", time: "2:00 PM EST" },
-    { date: "Aug 22", title: "Pediatric Cancer Awareness Day", type: "Fundraising", time: "10:00 AM EST" },
-    { date: "Sep 5", title: "Mental Health Myth-Busters", type: "Educational", time: "1:00 PM EST" },
-    { date: "Sep 12", title: "Hospital Visit & Fundraiser", type: "Community", time: "3:00 PM EST" }
+    { date: "Jul 15", title: "Double Good Fundraiser", type: "Fundraising", time: "12:00 PM EST", link: "https://www.instagram.com/p/DMIhybwNOLB/" },
+    { date: "Jul 15", title: "Double Good Fundraiser", type: "Educational", time: "12:00 PM EST", link: "https://www.instagram.com/p/DMIhybwNOLB/" },
+    { date: "Jul 15", title: "Double Good Fundraiser", type: "Community", time: "12:00 PM EST", link: "https://www.instagram.com/p/DMIhybwNOLB/" },
+    { date: "Jul 15", title: "Double Good Fundraiser", type: "Fundraising", time: "12:00 PM EST", link: "https://www.instagram.com/p/DMIhybwNOLB/" }
   ];
 
   return (
@@ -313,9 +313,9 @@ const Home = () => {
                       <span className="text-sm text-rose-600">{event.time}</span>
                     </div>
                     <h3 className="text-xl font-bold text-rose-600 mb-2">{event.title}</h3>
-                    <button className="text-rose-500 font-semibold hover:text-rose-600 transition-colors duration-200 flex items-center gap-2">
-                      Register Now <ArrowRight className="w-4 h-4" />
-                    </button>
+                    <a className="text-rose-500 font-semibold hover:text-rose-600 transition-colors duration-200 flex items-center gap-2 hover:underline" target='_blank' href={event.link}>
+                      Join <ArrowRight className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
               </div>
