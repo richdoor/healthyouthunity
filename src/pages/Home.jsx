@@ -350,7 +350,7 @@ const Home = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 bg-rose-400 rounded-full flex items-center justify-center">
-                  <Heart className="w-5 h-5" />
+                  <img src="/src/assets/profile.jpg" alt="Health Youth Unity" className='rounded-full border-rose-200 border-2'/>
                 </div>
                 <div>
                   <h3 className="font-bold">HEALTH</h3>
@@ -383,7 +383,7 @@ const Home = () => {
             <div>
               <h4 className="font-bold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/healthyouthunity/" className="w-10 h-10 bg-rose-700 rounded-full flex items-center justify-center hover:bg-rose-600 transition-colors">
+                <a href="https://www.instagram.com/healthyouthunity/" target='_blank' className="w-10 h-10 bg-rose-700 rounded-full flex items-center justify-center hover:bg-rose-600 transition-colors">
                   <Instagram />
                 </a>
               </div>
