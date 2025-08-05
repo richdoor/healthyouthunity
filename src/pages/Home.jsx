@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Heart, Users, BookOpen, Calendar, ArrowRight, Play, Award, Target, Stethoscope, Brain, Activity, Instagram } from 'lucide-react';
+import { Heart, BookOpen, Calendar, ArrowRight, Award, Target, Stethoscope, Brain, Activity, Instagram } from 'lucide-react';
+
+// NOTES: add a "team" section or page that displays the faces of the faces from instagram
 
 const Home = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [impactCount, setImpactCount] = useState({ funds: 0, patients: 0, hospitals: 0, events: 0 });
-    const [hasAnimated, setHasAnimated] = useState(false); // Changed from isVisible
+    const [hasAnimated, setHasAnimated] = useState(false); 
     const impactRef = useRef(null);
 
     useEffect(() => {

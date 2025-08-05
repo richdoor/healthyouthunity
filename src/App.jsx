@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   useEffect(() => {
-    // Force smooth scrolling
+    // smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth';
   }, []);
   
